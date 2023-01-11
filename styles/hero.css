@@ -1,0 +1,68 @@
+@import 'vars.css';
+
+.hero__info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero__avatar-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero__avatar{
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 6px solid var(--accent);
+    border-radius: 40px;
+}
+
+.hero__header{
+    font-size: 22pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero__summary{
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1024px){
+    .hero__header{
+        font-size: 19pt;
+    }
+    
+    .hero__summary{
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero__header{
+        font-size: 16pt;
+    }
+    
+
+    .hero__info, .hero__avatar-container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__info{
+        margin-bottom: 20px;
+    }
+
+    .hero__summary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+}

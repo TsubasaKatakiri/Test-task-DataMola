@@ -1,0 +1,65 @@
+@import 'vars.css';
+@import 'animations.css';
+
+.slider{
+    width: 100%;
+    padding: 0 30px;
+    position: relative;
+}
+
+.slider__container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__control-arrow{
+    position: absolute;
+    top: 50%;
+    font-size: 24pt;
+    transform: translateY(-50%);
+    color: var(--text2);
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.slider__control-arrow:hover{
+    color: var(--accent);
+}
+
+.slider__control-arrow.left{
+    left: 0px;
+}
+
+.slider__control-arrow:hover.left{
+    animation: pulseMoveLeft 2s infinite;
+}
+
+.slider__control-arrow.right{
+    right: 0px;
+}
+
+.slider__control-arrow:hover.right{
+    animation: pulseMoveRight 2s infinite;
+}
+
+.slider__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.slider__content.transition{
+    transition: transform 1s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    .slider{
+        padding: 0;
+    }
+    .slider__control-arrow{
+        display: none !important;
+    }
+}

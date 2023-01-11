@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2558942418.js" crossorigin="anonymous"></script> 
+    <title>My CV page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <h1 class="logo">My page</h1>
+            <nav class="navmenu">
+                <ul class="list navlist">
+                    <li class="navlist__item">
+                        <a class="link" href="#summary">About me</a>
+                    </li>
+                    <li class="navlist__item">
+                        <a class="link" href="#education">Education</a>
+                    </li>
+                    <li class="navlist__item">
+                        <a class="link" href="#skills">Skills</a>
+                    </li>
+                    <li class="navlist__item">
+                        <a class="link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="navlist__item">
+                        <a class="link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars navbutton"></i>
+            <nav class="dropdown">
+                <ul class="list">
+                    <li class="dropdown__item">
+                        <a class="link_block" href="#summary">About me</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a class="link_block" href="#education">Education</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a class="link_block" href="#skills">Skills</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a class="link_block" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a class="link_block" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container container_main">
+            <section class="section_hero" id="summary">
+                <div class="hero__info">
+                    <h2 class="hero__header">About me</h2>
+                    <div class="hero__summary">
+                        <p>Good daytime! My name is Aliaksei Reut, I'm 29. I'm actively searching for a job or internship as Junior/Trainee Frontend developer. Currently I don't have any commercial development experience, but I have some education and pet-projects (check them on my Github). I completed long-term software development courses and have good basic programming knowledge. I'm a confident and passionate programmer who learns new technologies easily, rapidly and with interest, and, if necessary, I can learn any new technology basics in a short time.</p>
+                        <p>My languages are: Russian(native), Belarussian(native), English(B1 - in progress); I also recently started learning Japanese.</p>
+                        <p>I'm a big fan of anime and videogames, and also sometimes drawing on my PC using my graphic tablet.</p>
+                        <a href="media/cv.pdf" download class="button">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero__avatar-container">
+                    <img class="hero__avatar" src="media/avatar.jpg">
+                </div>
+            </section>
+            <section class="section" id="education">
+                <h3 class="section__header">My education</h3>
+                <ul class="list list_horizontal list_education">
+                    <li class="education">
+                        <span class="education__speciality">Doctor</span>
+                        <span class="education__facility">Belarussian State Medical University</span>
+                        <span class="education__time">2010-2016</span>
+                    </li>
+                    <li class="education">
+                        <span class="education__speciality">Software Developer</span>
+                        <span class="education__facility">STEP IT Academy (Minsk, Belarus)</span>
+                        <span class="education__time">2019-2022</span>
+                    </li>
+                </ul>
+                <div class="education-notes">
+                    <p>As software developer I'm actively working to expand and harden my programming knowledge by watching programming videos on Youtube, reading programming books, exploring technical documentation and thematical web resources. To harden my knowledge of English to the solid B1 level and develop it further to B2 level for study I prefer English language resources and books. Some of the latest books I read recently are:</p>
+                    <ul class="list_marked">
+                        <li class="list__item">Ben Frain "Responsive Web Design with HTML5 and CSS"</li>
+                        <li class="list__item">David Flanagan "JavaScript: The Definitive Guide"</li>
+                        <li class="list__item">Stoyan Stefanov "React: Up and Running. Building Web Applications"</li>
+                        <li class="list__item">David Griffiths, Dawn Griffiths "React Cookbook: Recipes for Mastering the React Framework"</li>
+                    </ul>   
+                    <p>Now, to harden my basic algorithms knowledge, I'm reading "JavaScript Data Structures and Algorithms: An Introduction to Understanding and Implementing Core Data Structure and Algorithm Fundamenthals" by Sammie Bae.</p>    
+                </div>     
+            </section>
+            <section class="section" id="skills">
+                <h3 class="section__header">My skills</h3>
+                <div class="skills">
+                    <div class="skills__category">
+                        <h4 class="skills__category__header">Markup</h4>
+                        <ul class="list list_horizontal">
+                            <li class="list__item skill">HTML5</li>
+                            <li class="list__item skill">CSS3</li>
+                            <li class="list__item skill">SASS</li>
+                            <li class="list__item skill">Responsive design (mobile-first/desktop-first)</li>
+                        </ul>   
+                    </div>
+                    <div class="skills__category">
+                        <h4 class="skills__category__header">Programming Languages</h4>
+                        <ul class="list list_horizontal">
+                            <li class="list__item skill">JavaScript</li>
+                            <li class="list__item skill">TypeScript</li>
+                        </ul>   
+                    </div>
+                    <div class="skills__category">
+                        <h4 class="skills__category__header">Libraries & Frameworks</h4>
+                        <ul class="list list_horizontal">
+                            <li class="list__item skill">React</li>
+                            <li class="list__item skill">Redux</li>
+                            <li class="list__item skill">Axios</li>
+                            <li class="list__item skill">Formik/Yup</li>
+                            <li class="list__item skill">styled-components</li>
+                        </ul>   
+                    </div>
+                    <div class="skills__category">
+                        <h4 class="skills__category__header">Databases & Queries</h4>
+                        <ul class="list list_horizontal">
+                            <li class="list__item skill">MongoDB</li>
+                            <li class="list__item skill">SQL</li>
+                        </ul>   
+                    </div>
+                    <div class="skills__category">
+                        <h4 class="skills__category__header">Other</h4>
+                        <ul class="list list_horizontal">
+                            <li class="list__item skill">Git/Github</li>
+                            <li class="list__item skill">npm/yarn</li>
+                            <li class="list__item skill">Bootstrap</li>
+                            <li class="list__item skill">Node.js + Express</li>
+                            <li class="list__item skill">Gulp</li>
+                            <li class="list__item skill">Docker</li>
+                        </ul>   
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="portfolio">
+                <h3 class="section__header">My portfolio</h3>
+                <div class="slider">
+                    <div class="slider__container">
+                        <div class="slider__content">
+                            <div class="slide">
+                                <div class="slide__image-container">
+                                    <img src="media/project1.png" alt="SakuraSNS Project" class="slide__image">
+                                </div>
+                                <article class="slide__info">
+                                    <h4 class="slide__info__header">SakuraSNS Project</h4>
+                                    <div class="slide__info__section">
+                                        <a class="link link_secondary link_nopulse" href="https://github.com/TsubasaKatakiri/SakuraSNS-Client">https://github.com/TsubasaKatakiri/SakuraSNS-Client</a>
+                                        <a class="link link_secondary link_nopulse" href="https://github.com/TsubasaKatakiri/SakuraSNS-Server">https://github.com/TsubasaKatakiri/SakuraSNS-Server</a>
+                                    </div>
+                                    <div class="slide__info__section">
+                                        <h5 class="slide__info__section__header">Technologies used</h5>
+                                        <ul class="list_marked">
+                                            <li class="list__item">MongoDB</li>
+                                            <li class="list__item">Node.js + Express</li>
+                                            <li class="list__item">React (Javascript)</li>
+                                            <li class="list__item">Redux</li>
+                                            <li class="list__item">Formik + Yup (for forms)</li>
+                                            <li class="list__item">Axios (for server requests)</li>
+                                            <li class="list__item">Firebase (for media storage)</li>
+                                            <li class="list__item">WebSocket (for chat)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="slide__info__section">
+                                        <h5 class="slide__info__section__header">Summary</h5>
+                                        <p>My graduation project built with the MERN technology stack using Javascript. Actually, this is the Facebook clone that gives you opportunity to have your own page, chat with your friends, check recent posts from your friends and groups, upload and enjoy music and videos, manage your own photo albums and much more. You can join someone's group, check its gallery, comment its posts, apply to the group events or discuss various topics. Or you create your own and manage it, using wide group administration possibilities.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__image-container">
+                                    <img src="media/project2.png" alt="SakuraSNS Project" class="slide__image">
+                                </div>
+                                <article class="slide__info">
+                                    <h4 class="slide__info__header">Notes App</h4>
+                                    <div class="slide__info__section">
+                                        <a class="link link_secondary link_nopulse" href="https://github.com/TsubasaKatakiri/Notes-App">https://github.com/TsubasaKatakiri/Notes-App</a>
+                                    </div>
+                                    <div class="slide__info__section">
+                                        <h5 class="slide__info__section__header">Technologies used</h5>
+                                        <ul class="list_marked">
+                                            <li class="list__item">React (Typescript)</li>
+                                            <li class="list__item">SASS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="slide__info__section">
+                                        <h5 class="slide__info__section__header">Summary</h5>
+                                        <p>My first project built using Typescript. This is a simple app that allows you to create, edit and delete small notes. You can also apply tags to your notes and filter notes output by these tags. All notes are saved in local storage.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__image-container">
+                                    <img src="media/project3.png" alt="SakuraSNS Project" class="slide__image">
+                                </div>
+                                <article class="slide__info">
+                                    <h4 class="slide__info__header">Various landing page training projects</h4>
+                                    <div class="slide__info__section">
+                                        <a class="link link_secondary link_nopulse" href="https://github.com/TsubasaKatakiri/Landing-page-example-2">https://github.com/TsubasaKatakiri/Landing-page-example-2</a>
+                                        <a class="link link_secondary link_nopulse" href="https://github.com/TsubasaKatakiri/Landing-example-2">https://github.com/TsubasaKatakiri/Landing-example-2</a>
+                                        <a class="link link_secondary link_nopulse" href="https://github.com/TsubasaKatakiri/Landing-page-example">https://github.com/TsubasaKatakiri/Landing-page-example</a>
+                                        
+                                    </div>
+                                    <div class="slide__info__section">
+                                        <h5 class="slide__info__section__header">Technologies used</h5>
+                                        <ul class="list_marked">
+                                            <li class="list__item">HTML</li>
+                                            <li class="list__item">CSS, SASS</li>
+                                            <li class="list__item">Javascript</li>
+                                            <li class="list__item">Gulp</li>
+                                        </ul>
+                                    </div>
+                                    <div class="slide__info__section">
+                                        <h5 class="slide__info__section__header">Summary</h5>
+                                        <p>A small series of landing page projects where I practiced in various HTML/CSS/Javascript aspects and responsive design (both mobile-first and desktop-first).</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h3 class="section__header">Contact me</h3>
+                <div class="contacts">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone contact__icon"></i>
+                        <div class="contact__content">
+                            <span class="contact__header">Telephone</span>
+                            <a class="link link_black link_light contact__value" href="tel:+375292726849">+375292726849</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-solid fa-at contact__icon"></i>
+                        <div class="contact__content">
+                            <span class="contact__header">Email 1</span>
+                            <a class="link link_black link_light contact__value" href="mailto:katakiritsubasa@gmail.com">katakiritsubasa@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-solid fa-at contact__icon"></i>
+                        <div class="contact__content">
+                            <span class="contact__header">Email 2</span>
+                            <a class="link link_black link_light contact__value" href="mailto:aliakseireut93@gmail.com">aliakseireut93@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-brands fa-telegram contact__icon"></i>
+                        <div class="contact__content">
+                            <span class="contact__header">Telegram</span>
+                            <a class="link link_black link_light contact__value" href="https://t.me/Aliaksei_Reut">t.me/Aliaksei_Reut</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-brands fa-github contact__icon"></i>
+                        <div class="contact__content">
+                            <span class="contact__header">Github</span>
+                            <a class="link link_black link_light contact__value" href="https://github.com/TsubasaKatakiri">https://github.com/TsubasaKatakiri</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-brands fa-linkedin-in contact__icon"></i>
+                        <div class="contact__content">
+                            <span class="contact__header">LinkedIn</span>
+                            <a class="link link_black link_light contact__value" href="https://linkedin.com/in/aleksei-reut-bbb89824a/">https://linkedin.com/in/aleksei-reut-bbb89824a/</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container container_footer">
+            <span class="footerText">Created as test task for JS From Zero to Hero 2023 at DataMola</span>
+            <span class="footerText">Handcrafted by 
+                <a class="link link_colored" href="https://github.com/TsubasaKatakiri">Katakiri Tsubasa</a>
+            </span>
+        </div>
+    </footer>
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>

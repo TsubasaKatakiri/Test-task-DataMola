@@ -1,0 +1,49 @@
+@import 'vars.css';
+
+@keyframes pulseBlock {
+    0%{
+        box-shadow: 0 0 0 var(--accent);
+    }
+    50%{
+        box-shadow: 0 0 5px var(--accent);
+    }
+    100%{
+        box-shadow: 0 0 0 var(--accent);
+    }
+}
+
+@keyframes pulseText {
+    0%{
+        text-shadow: 0 0 0 var(--accent);
+    }
+    50%{
+        text-shadow: 0 0 3px var(--accent);
+    }
+    100%{
+        text-shadow: 0 0 0 var(--accent);
+    }
+}
+
+@keyframes pulseMoveLeft {
+    0%{
+        transform: translate(0, -50%);
+    }
+    50%{
+        transform: translate(-10px, -50%);
+    }
+    100%{
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes pulseMoveRight {
+    0%{
+        transform: translate(0, -50%);
+    }
+    50%{
+        transform: translate(10px, -50%);
+    }
+    100%{
+        transform: translate(0, -50%);
+    }
+}

@@ -1,0 +1,52 @@
+@import 'vars.css';
+
+.list_education{
+    justify-content: space-between;
+}
+
+.education{
+    width: calc((100% / 2) - 10pt);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--text2);
+    padding: 10px 20px;
+}
+
+.education__speciality{
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 16pt;
+}
+
+.education__facility{
+    font-weight: 500;
+    font-size: 11pt;
+}
+
+.education__time{
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text2);
+}
+
+.education-notes{
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px){
+    .list_education{
+        flex-wrap: wrap;
+    }
+    
+    .education{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .education:last-child{
+        margin-bottom: 0;
+    }
+}
